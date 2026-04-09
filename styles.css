@@ -59,112 +59,8 @@
     padding: 24px 0 72px;
     }
 
-    .page-shell--with-sidebar {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 264px;
-    gap: 24px;
-    align-items: start;
-    }
-
-    .page-main {
-    min-width: 0;
-    }
-
-    .sidebar-contact {
-    position: relative;
-    }
-
-    .floating-contact {
-    position: sticky;
-    top: 24px;
-    width: 100%;
-    padding: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    border-radius: 28px;
-    background: rgba(255, 249, 241, 0.88);
-    backdrop-filter: blur(14px);
-    box-shadow: 0 18px 50px rgba(79, 51, 30, 0.16);
-    }
-
-    .floating-contact__header strong {
-    display: block;
-    margin-top: 4px;
-    font-size: 1.05rem;
-    }
-
-    .floating-contact__eyebrow {
-    margin: 0;
-    color: var(--accent-deep);
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    }
-
-    .floating-contact__image {
-    display: block;
-    width: 100%;
-    border-radius: 20px;
-    border: 1px solid rgba(169, 92, 53, 0.12);
-    }
-
-    .floating-contact__image-link {
-    display: block;
-    margin-top: 14px;
-    border-radius: 20px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.floating-contact__image-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(79, 51, 30, 0.14);
-    }
-
-    .floating-contact__body {
-    margin-top: 14px;
-    }
-
-    .floating-contact__body p,
-    .floating-contact__guide,
-    .floating-contact__note {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.92rem;
-    }
-
-    .floating-contact__guide {
-    display: block;
-    margin-top: 8px;
-    line-height: 1.55;
-    }
-
-    .floating-contact__phone {
-    display: block;
-    margin-top: 10px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, rgba(169, 92, 53, 0.96), rgba(127, 63, 33, 0.96));
-    color: #fffaf3;
-    font-size: 1.05rem;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 0.02em;
-    }
-
-    .floating-contact__note {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.8rem;
-    }
-
     .mobile-contact {
     display: none;
-    }
-
-    @media (min-width: 861px) {
-    .mobile-contact-card {
-        display: none !important;
-    }
     }
 
     .hero {
@@ -581,9 +477,6 @@
     }
 
     @media (max-width: 1080px) {
-    .page-shell--with-sidebar {
-    grid-template-columns: minmax(0, 1fr) 220px;
-    }
 
     .grid--three,
     .grid--four,
@@ -616,23 +509,6 @@
 }
 
     @media (max-width: 860px) {
-    .page-shell--with-sidebar {
-    grid-template-columns: 1fr;
-    }
-
-    .sidebar-contact {
-    display: none;
-    }
-
-    .mobile-contact-card {
-    display: block;
-    margin-top: 18px;
-    }
-
-    .mobile-contact-card .floating-contact {
-        position: static;
-        width: 100%;
-    }
 
     .mobile-contact {
         position: fixed;
