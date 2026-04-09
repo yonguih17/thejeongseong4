@@ -618,6 +618,16 @@
     display: none;
     }
 
+    .mobile-contact-card {
+    display: block;
+    margin-top: 18px;
+    }
+
+    .mobile-contact-card .floating-contact {
+        position: static;
+        width: 100%;
+    }
+
     .mobile-contact {
         position: fixed;
         left: 12px;
@@ -704,5 +714,9 @@
     .mobile-contact {
         min-height: 50px;
         font-size: 0.95rem;
+    }
+
+    .mobile-contact-card {
+    margin-top: 14px;
     }
 }
